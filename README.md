@@ -5,7 +5,7 @@ A modern, elegant, and fully responsive e-commerce web application designed for 
 ---
 
 ## Live Demo
-You can view the live project deployment here: 
+You can view the live project deployment here: https://omarabdeltawabahmed.github.io/FIS-LUXE/
 
 ---
 
