@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتالوج الأحذية الفاخرة | FIS Luxe Footwear</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-msg">
+                <span>🔥 عروض الموسم: استخدم كود</span>
+                <span class="coupon-pill">FIS2026</span>
+                <span>واحصل على خصم فوري 15% على جميع الأحذية</span>
+            </div>
+            <div class="top-bar-contact">
+                <a href="cart.html">📦 شحن مجاني للطلبات فوق 500 ج.م</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="brand-logo">
+                    <div class="logo-icon-box">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2 18h20v2H2v-2zm1.15-4.05L4 9l5-4 4 3 7.85-2.05L22 8l-2 6H3.15z"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <h1>FIS LUXE</h1>
+                        <span>أحذية النخبة الفاخرة</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="products.html" class="nav-link active">تشكيلة المنتجات</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن والفريق</a></li>
+                    <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+                    <li><a href="cart.html" class="nav-link">سلة المشتريات</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="action-btn btn-theme-toggle" title="تبديل المظهر">
+                        <span class="theme-icon">☀️</span>
+                    </button>
+
+                    <a href="products.html" class="action-btn" title="المفضلة">
+                        <span>❤️</span>
+                        <span class="action-badge wishlist-count-badge">0</span>
+                    </a>
+
+                    <button class="action-btn btn-cart-toggle" title="سلة المشتريات">
+                        <span>🛒</span>
+                        <span class="action-badge cart-count-badge">0</span>
+                    </button>
+
+                    <button class="action-btn mobile-nav-toggle" aria-label="فتح القائمة">
+                        <span>☰</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="nav-overlay" class="drawer-overlay"></div>
+
+    <!-- ترويسة الصفحة -->
+    <div style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 35px 0;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 6px;">تشكيلة الأحذية الفاخرة</h1>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        أرقى الموديلات الكلاسيكية والعصرية المصنوعة من الجلد الطبيعي والشمواه
+                    </p>
+                </div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    <a href="index.html" style="color: var(--gold-primary);">الرئيسية</a> / <span>المنتجات</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم الفلاتر والمنتجات -->
+    <section class="products-section" style="padding-top: 40px;">
+        <div class="container">
+            <!-- شريط الفلاتر والبحث المتطور -->
+            <div class="filter-wrapper">
+                <div class="filter-grid">
+                    <!-- حقل البحث الحي -->
+                    <div class="search-box">
+                        <input type="text" id="catalog-search" placeholder="ابحث باسم الحذاء، الخامة (جلد طبيعي، شمواه)، اللون..." autocomplete="off">
+                        <span class="search-icon">🔍</span>
+                    </div>
+
+                    <!-- الترتيب -->
+                    <div>
+                        <select id="catalog-sort" class="sort-select">
+                            <option value="featured">الترتيب: الموصى به</option>
+                            <option value="price-asc">السعر: من الأقل للأعلى</option>
+                            <option value="price-desc">السعر: من الأعلى للأقل</option>
+                            <option value="rating">الأعلى تقييماً ★</option>
+                        </select>
+                    </div>
+
+                    <!-- نطاق السعر والمؤشر -->
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-size: 0.85rem; color: var(--text-secondary);">الحد الأقصى للسعر:</span>
+                        <span id="price-val" style="font-weight: 800; color: var(--gold-light); font-family: var(--font-english);">450 ج.م</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <input type="range" id="price-range" min="200" max="450" step="50" value="450" style="width: 100%; accent-color: var(--gold-primary); cursor: pointer;">
+                </div>
+
+                <!-- أزرار التصنيفات السريعة -->
+                <div class="filter-categories" id="filter-categories">
+                    <button class="cat-btn active" data-cat="all">الكل (6)</button>
+                    <button class="cat-btn" data-cat="oxford">أوكسفورد كلاسيك (4)</button>
+                    <button class="cat-btn" data-cat="derby">ديربي مودرن (2)</button>
+                    <button class="cat-btn" data-cat="leather">جلد طبيعي (4)</button>
+                    <button class="cat-btn" data-cat="suede">شمواه فاخر (2)</button>
+                </div>
+            </div>
+
+            <!-- معلومات عدد النتائج -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <span id="results-count" style="font-size: 0.9rem; color: var(--text-secondary);">عرض 6 أحذية فاخرة</span>
+                <button id="btn-clear-filters" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.8rem; display: none;">
+                    ✕ إعادة ضبط الفلاتر
+                </button>
+            </div>
+
+            <!-- شبكة المنتجات -->
+            <div class="products-grid" id="catalog-grid">
+                <!-- سيتم وضع البطاقات ديناميكياً هنا -->
+            </div>
+
+            <!-- حالة عدم وجود نتائج للبحث -->
+            <div id="no-results-view" style="display: none; text-align: center; padding: 60px 20px;">
+                <div style="font-size: 4rem; margin-bottom: 16px;">👞🔍</div>
+                <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 10px;">عذراً، لم نجد أحذية تطابق بحثك!</h3>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 24px;">
+                    جرّب البحث بكلمة مختلفة مثل "أوكسفورد" أو "ديربي" أو "شمواه"، أو قم بإعادة ضبط نطاق السعر.
+                </p>
+                <button class="btn btn-primary" onclick="resetFilters()">عرض كل الأحذية</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <div class="logo-icon-box">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 18h20v2H2v-2zm1.15-4.05L4 9l5-4 4 3 7.85-2.05L22 8l-2 6H3.15z"/>
+                            </svg>
+                        </div>
+                        <div class="brand-text">
+                            <h1>FIS LUXE</h1>
+                            <span>أحذية النخبة الفاخرة</span>
+                        </div>
+                    </div>
+                    <p>أحذية رجالية كلاسيكية وعصرية مصممة بأعلى معايير الجودة والراحة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>الصفحات</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">فريق العمل</a></li>
+                        <li><a href="cart.html">السلة والدفع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>الضمان والدعم</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="contact.html#faq">الأسئلة الشائعة</a></li>
+                        <li><a href="about.html">نبذة عن مشروع FIS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>كوبون الخصم</h4>
+                    <p style="font-size: 0.85rem; color: var(--gold-light);">
+                        استخدم كود <strong>FIS2026</strong> عند الدفع للحصول على خصم 15% فوري!
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 متجر الأحذية الفاخرة. جميع الحقوق محفوظة.</p>
+                <p class="footer-credits">مشروع كلية الحاسبات والذكاء الاصطناعي - FIS Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- السلة الجانبية -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+    <aside id="cart-drawer" class="cart-drawer">
+        <div class="drawer-header">
+            <h3>سلة المشتريات (<span class="cart-count-badge">0</span>)</h3>
+            <button id="btn-close-drawer" class="drawer-close-btn">&times;</button>
+        </div>
+        <div class="drawer-body" id="drawer-items-list"></div>
+        <div class="drawer-footer" id="drawer-footer"></div>
+    </aside>
+
+    <button id="btn-back-to-top" class="btn-back-to-top" title="الرجوع للأعلى">↑</button>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // منطق فلترة وترتيب وبحث صفحة الكتالوج
+        let activeCategory = 'all';
+        let searchQuery = '';
+        let maxPrice = 450;
+        let sortOption = 'featured';
+
+        function renderCatalog() {
+            const container = document.getElementById('catalog-grid');
+            const noResults = document.getElementById('no-results-view');
+            const countLabel = document.getElementById('results-count');
+            const clearBtn = document.getElementById('btn-clear-filters');
+
+            let filtered = PRODUCTS.filter(p => {
+                // فلتر الفئة
+                let matchCat = false;
+                if (activeCategory === 'all') matchCat = true;
+                else if (activeCategory === 'oxford') matchCat = p.category === 'oxford';
+                else if (activeCategory === 'derby') matchCat = p.category === 'derby';
+                else if (activeCategory === 'leather') matchCat = p.material.includes('Genuine Leather') || p.material.includes('جلد طبيعي');
+                else if (activeCategory === 'suede') matchCat = p.material.includes('Suede') || p.material.includes('شمواه');
+
+                // فلتر البحث
+                const q = searchQuery.toLowerCase().trim();
+                let matchSearch = true;
+                if (q) {
+                    matchSearch = p.title.toLowerCase().includes(q) ||
+                                  p.titleAr.includes(q) ||
+                                  p.material.toLowerCase().includes(q) ||
+                                  p.description.toLowerCase().includes(q);
+                }
+
+                // فلتر السعر
+                const matchPrice = p.price <= maxPrice;
+
+                return matchCat && matchSearch && matchPrice;
+            });
+
+            // الترتيب
+            if (sortOption === 'price-asc') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (sortOption === 'price-desc') {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (sortOption === 'rating') {
+                filtered.sort((a, b) => b.rating - a.rating);
+            }
+
+            // عرض أو إخفاء زر التصفير
+            if (activeCategory !== 'all' || searchQuery !== '' || maxPrice < 450) {
+                clearBtn.style.display = 'inline-block';
+            } else {
+                clearBtn.style.display = 'none';
+            }
+
+            // رسم الكروت
+            countLabel.textContent = `عرض ${filtered.length} من أصل ${PRODUCTS.length} أحذية فاخرة`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+                container.innerHTML = filtered.map(p => createProductCardHTML(p)).join('');
+            }
+
+            Store.updateWishlistIcons();
+        }
+
+        function resetFilters() {
+            activeCategory = 'all';
+            searchQuery = '';
+            maxPrice = 450;
+            sortOption = 'featured';
+
+            document.getElementById('catalog-search').value = '';
+            document.getElementById('catalog-sort').value = 'featured';
+            document.getElementById('price-range').value = 450;
+            document.getElementById('price-val').textContent = '450 ج.م';
+
+            document.querySelectorAll('.cat-btn').forEach(b => {
+                b.classList.toggle('active', b.getAttribute('data-cat') === 'all');
+            });
+
+            renderCatalog();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // البحث
+            document.getElementById('catalog-search').addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                renderCatalog();
+            });
+
+            // الترتيب
+            document.getElementById('catalog-sort').addEventListener('change', (e) => {
+                sortOption = e.target.value;
+                renderCatalog();
+            });
+
+            // السلايدر
+            const range = document.getElementById('price-range');
+            const priceVal = document.getElementById('price-val');
+            range.addEventListener('input', (e) => {
+                maxPrice = Number(e.target.value);
+                priceVal.textContent = `${maxPrice} ج.م`;
+                renderCatalog();
+            });
+
+            // أزرار التصنيفات
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeCategory = btn.getAttribute('data-cat');
+                    renderCatalog();
+                });
+            });
+
+            // زر إعادة الضبط
+            document.getElementById('btn-clear-filters').addEventListener('click', resetFilters);
+
+            // التحميل الأولي
+            renderCatalog();
+        });
+    </script>
+</body>
+</html>

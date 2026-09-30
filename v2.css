@@ -1,0 +1,10 @@
+/* استيراد النمط الفاخر المحدث لمتجر Shoes Store */
+@import url('css/style.css');
+
+/* توافق إضافي لمعرفات وكلاسات صفحة About Us القديمة */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIS Luxe Footwear | متجر الأحذية الفاخرة - جلد طبيعي 100%</title>
+    
+    <!-- الخطوط والأيقونات -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- النمط الرئيسي -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الشريط الإعلاني العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-msg">
+                <span>✨ خصم حصري 15% بمناسبة الموسم الجديد كود:</span>
+                <span class="coupon-pill">FIS2026</span>
+                <span>| توصيل مجاني للطلبات أكثر من 500 ج.م</span>
+            </div>
+            <div class="top-bar-contact">
+                <a href="tel:+201000000000">📞 خدمة العملاء: 01000000000</a>
+                <a href="about.html">🏛️ مشروع كلية الحاسبات والذكاء الاصطناعي</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل الرئيسي الفاخر -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- الشعار -->
+                <a href="index.html" class="brand-logo">
+                    <div class="logo-icon-box">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2 18h20v2H2v-2zm1.15-4.05L4 9l5-4 4 3 7.85-2.05L22 8l-2 6H3.15z"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <h1>FIS LUXE</h1>
+                        <span>أحذية النخبة الفاخرة</span>
+                    </div>
+                </a>
+
+                <!-- روابط التنقل -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="products.html" class="nav-link">تشكيلة المنتجات</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن والفريق</a></li>
+                    <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+                    <li><a href="cart.html" class="nav-link">سلة المشتريات</a></li>
+                </ul>
+
+                <!-- أدوات الهيدر -->
+                <div class="header-actions">
+                    <!-- تبديل الوضع الليلي / النهاري -->
+                    <button class="action-btn btn-theme-toggle" title="تبديل المظهر">
+                        <span class="theme-icon">☀️</span>
+                    </button>
+
+                    <!-- المفضلة -->
+                    <a href="products.html" class="action-btn" title="قائمة الرغبات">
+                        <span>❤️</span>
+                        <span class="action-badge wishlist-count-badge">0</span>
+                    </a>
+
+                    <!-- السلة الجانبية -->
+                    <button class="action-btn btn-cart-toggle" title="سلة المشتريات">
+                        <span>🛒</span>
+                        <span class="action-badge cart-count-badge">0</span>
+                    </button>
+
+                    <!-- زر القائمة للجوال -->
+                    <button class="action-btn mobile-nav-toggle" aria-label="فتح القائمة">
+                        <span>☰</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- تراكب القائمة للجوال -->
+    <div id="nav-overlay" class="drawer-overlay"></div>
+
+    <!-- قسم البطل الترويجي (Hero Section) -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-pill">
+                        <span>👑 التشكيلة الملكية 2026</span>
+                    </div>
+                    <h1 class="hero-title">
+                        خطوات تصنع <span>الهيبة والوقار</span> من الجلد الطبيعي
+                    </h1>
+                    <p class="hero-desc">
+                        اكتشف براعة الصنعة اليدوية البريطانية والإيطالية مع تشكيلة أحذية أوكسفورد وديربي الفاخرة، المصممة خصيصاً لتمنحك راحة استثنائية وأناقة تليق بك.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="products.html" class="btn btn-primary">
+                            <span>تصفح المنتجات الآن</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 12H5M12 19l-7-7 7-7"/>
+                            </svg>
+                        </a>
+                        <a href="about.html" class="btn btn-secondary">
+                            <span>قصة المتجر وفريق العمل</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>جلد طبيعي أصلي</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>+5,000</h3>
+                            <p>عميل يثق بنا</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>14 يوم</h3>
+                            <p>استبدال واسترجاع</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-image-wrapper">
+                        <img src="./img/s11.jpg" alt="حذاء أوكسفورد فاخر">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-icon">👞</div>
+                        <div class="floating-text">
+                            <h4>Wingtip Oxfords</h4>
+                            <p>جلد طبيعي أسود ملكي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- شريط المزايا والقيمة -->
+    <section class="features-strip">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-info">
+                        <h4>جلد طبيعي 100%</h4>
+                        <p>أفخر جلود العجل والشمواه المقاوم للتشقق</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-info">
+                        <h4>شحن سريع ومجاني</h4>
+                        <p>مجاناً لجميع الطلبات أكثر من 500 جنيه</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-info">
+                        <h4>استرجاع فوري</h4>
+                        <p>فترة سماح 14 يوماً للاستبدال والاسترجاع</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💳</div>
+                    <div class="feature-info">
+                        <h4>دفع آمن ومتعدد</h4>
+                        <p>الدفع عند الاستلام، بطاقات، فودافون كاش</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الثلاثي المميز (Featured Trio Showcase) -->
+    <section style="padding: 70px 0; background: var(--bg-main);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">الإصدارات الخاصة</span>
+                <h2 class="section-title">التشكيلة المختارة بعناية</h2>
+                <p class="section-subtitle">تصاميم استثنائية أثبتت جدارتها في المظهر الراقي والراحة المطلقة</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                <div style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; padding: 24px; text-align: center;">
+                    <img src="./img/s11.jpg" alt="Wingtip Oxfords" style="height: 240px; width: 100%; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px;">
+                    <span class="product-badge badge-gold" style="margin-bottom: 8px;">الأكثر طلباً</span>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 6px;">Wingtip Oxfords - Black</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 14px;">جلد طبيعي فاخر بنقوش وينج تيب الكلاسيكية</p>
+                    <button class="btn btn-outline w-100" onclick="openQuickView(1)">تفاصيل المنتج والطلب</button>
+                </div>
+
+                <div style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; padding: 24px; text-align: center;">
+                    <img src="./img/s12.jpg" alt="Cap Toe Oxfords" style="height: 240px; width: 100%; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px;">
+                    <span class="product-badge badge-emerald" style="margin-bottom: 8px;">موديل حديث</span>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 6px;">Cap Toe Oxfords - Grey</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 14px;">لون رمادي عصري غير مسبوق في عالم الأحذية</p>
+                    <button class="btn btn-outline w-100" onclick="openQuickView(3)">تفاصيل المنتج والطلب</button>
+                </div>
+
+                <div style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; padding: 24px; text-align: center;">
+                    <img src="./img/s13.jpg" alt="Plain Toe Derby" style="height: 240px; width: 100%; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px;">
+                    <span class="product-badge badge-purple" style="margin-bottom: 8px;">شمواه فائق النعومة</span>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 6px;">Plain Toe Derby - Navy</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 14px;">ديربي كحلي أنيق مناسب للإطلالات الكاجوال والرسمية</p>
+                    <button class="btn btn-outline w-100" onclick="openQuickView(5)">تفاصيل المنتج والطلب</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات الكامل (Products Section) -->
+    <section class="products-section" id="products-catalog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">كتالوج المتجر الكامل</span>
+                <h2 class="section-title">جميع منتجات الأحذية الفاخرة</h2>
+                <p class="section-subtitle">اختر حذاءك المفضل واستمتع بأسعار حصرية وجودة لا تضاهى</p>
+            </div>
+
+            <!-- شبكة المنتجات يتم توليدها ديناميكياً بواسطة JavaScript -->
+            <div class="products-grid" id="featured-products-container">
+                <!-- سيتم وضع البطاقات هنا -->
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="products.html" class="btn btn-primary" style="padding: 14px 36px; font-size: 1.05rem;">
+                    <span>عرض صفحة المنتجات مع الفلاتر والبحث المتقدم</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريق العمل (Team Section Teaser) -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">نخبة المطورين</span>
+                <h2 class="section-title">فريق عمل مشروع FIS</h2>
+                <p class="section-subtitle">طلبة كلية الحاسبات والذكاء الاصطناعي - العقول والمصممون وراء هذا المتجر الرقمي الفاخر</p>
+            </div>
+
+            <div class="team-grid" id="home-team-grid">
+                <!-- سيتم توليد أعضاء الفريق هنا -->
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="about.html" class="btn btn-secondary">التعرف على رؤية المتجر والمشروع كاملاً 👈</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل الفاخر (Footer) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="brand-logo" style="margin-bottom: 16px;">
+                        <div class="logo-icon-box">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M2 18h20v2H2v-2zm1.15-4.05L4 9l5-4 4 3 7.85-2.05L22 8l-2 6H3.15z"/>
+                            </svg>
+                        </div>
+                        <div class="brand-text">
+                            <h1>FIS LUXE</h1>
+                            <span>أحذية النخبة الفاخرة</span>
+                        </div>
+                    </div>
+                    <p>
+                        متجر الأحذية الفاخرة (Shoes Store) يقدم لعملائه في مصر والشرق الأوسط تشكيلة راقية من أرقى تصاميم أحذية الأوكسفورد والديربي المصنوعة يدوياً من الجلد الطبيعي الخالص.
+                    </p>
+                    <div style="display: flex; gap: 10px;">
+                        <span class="product-badge badge-gold">مشروع جامعي متطور 2026</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 الرئيسية</a></li>
+                        <li><a href="products.html">👞 كتالوج الأحذية</a></li>
+                        <li><a href="about.html">👥 فريق العمل (FIS Group)</a></li>
+                        <li><a href="cart.html">🛒 سلة المشتريات</a></li>
+                        <li><a href="contact.html">📞 اتصل بنا والدعم</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>الضمان والخدمات</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html#faq">🛡️ سياسة الاسترجاع (14 يوماً)</a></li>
+                        <li><a href="contact.html#faq">🚚 تفاصيل الشحن والتوصيل</a></li>
+                        <li><a href="products.html">🏷️ عروض وتخفيضات 2026</a></li>
+                        <li><a href="contact.html#faq">📏 جدول المقاسات الأوروبية</a></li>
+                        <li><a href="contact.html#faq">👞 إرشادات العناية بالجلد الطبيعي</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>النشرة البريدية والعروض</h4>
+                    <p style="font-size: 0.85rem; margin-bottom: 10px;">اشترك ليصلك كود خصم 15% حصري لطلبك القادم وأحدث الموديلات:</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني..." required>
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 16px;">اشتراك</button>
+                    </form>
+                    <div style="margin-top: 20px; font-size: 0.85rem; color: var(--gold-light);">
+                        كود خصم فوري: <strong style="color: #fff; background: rgba(212,175,55,0.2); padding: 2px 8px; border-radius: 4px;">FIS2026</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 متجر FIS LUXE للأحذية الفاخرة. جميع الحقوق محفوظة.</p>
+                <p class="footer-credits">
+                    كلية الحاسبات والذكاء الاصطناعي | إشراف وتنفيذ: 
+                    <strong>توفيق ربيع</strong> - <strong>عمر عبد التواب</strong> - <strong>سليمان محمد</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- السلة الجانبية المنزلقة (Slide-over Cart Drawer) -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+    <aside id="cart-drawer" class="cart-drawer">
+        <div class="drawer-header">
+            <h3>سلة المشتريات (<span class="cart-count-badge">0</span>)</h3>
+            <button id="btn-close-drawer" class="drawer-close-btn" aria-label="إغلاق السلة">&times;</button>
+        </div>
+        <div class="drawer-body" id="drawer-items-list">
+            <!-- سيتم حقن عناصر السلة هنا عبر Store.renderCartDrawer() -->
+        </div>
+        <div class="drawer-footer" id="drawer-footer">
+            <!-- سيتم حقن ملخص السلة وأزرار الدفع هنا -->
+        </div>
+    </aside>
+
+    <!-- زر الصعود للأعلى -->
+    <button id="btn-back-to-top" class="btn-back-to-top" title="الرجوع للأعلى">↑</button>
+
+    <!-- نصوص برمجية للبيانات والمنطق -->
+    <script src="js/products-data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // تحميل المنتجات وأعضاء الفريق في الصفحة الرئيسية
+        document.addEventListener('DOMContentLoaded', () => {
+            // رسم جميع المنتجات في الصفحة الرئيسية
+            const container = document.getElementById('featured-products-container');
+            if (container) {
+                container.innerHTML = PRODUCTS.map(p => createProductCardHTML(p)).join('');
+            }
+
+            // رسم أعضاء الفريق في الصفحة الرئيسية
+            const teamContainer = document.getElementById('home-team-grid');
+            if (teamContainer) {
+                teamContainer.innerHTML = TEAM_MEMBERS.map(m => `
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <img src="${m.image}" alt="${m.nameAr}" class="team-avatar">
+                            <span class="faculty-badge">FIS AI Faculty</span>
+                        </div>
+                        <h3 class="team-name">${m.nameAr}</h3>
+                        <p class="team-role">${m.jobAr}</p>
+                        <p class="team-bio">${m.bio}</p>
+                        <div class="team-tags">
+                            ${m.skills.map(s => `<span class="team-tag">${s}</span>`).join('')}
+                        </div>
+                        <div class="team-socials">
+                            <a href="${m.social.facebook}" target="_blank" class="social-link" title="فيسبوك">f</a>
+                            <a href="${m.social.whatsapp}" target="_blank" class="social-link" title="واتساب">WA</a>
+                            <a href="${m.social.tiktok}" target="_blank" class="social-link" title="تيك توك">TT</a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // تحديث أيقونات المفضلة
+            Store.updateWishlistIcons();
+        });
+    </script>
+</body>
+</html>
